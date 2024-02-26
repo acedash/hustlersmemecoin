@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
+    color: #000;
+    background-color: rgba(255, 102, 31,1);
+}
+/* preset */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.icon{
+    width: 4rem;
+}
+.row{
+    width: 100%;
+    padding: 0 4rem;
+    text-align: center;
+}
+section{
+    padding: 6rem 0rem;
+}
+h1{
+    color: #fff;
+    font-size: 3rem;
+}
+/* header */
+header nav{
+    background: rgba(255, 102, 31,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    margin-right: 1rem;
+}
+.logo-container{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.logo{
+    width: 14rem;
+    border-radius: 8rem;
+    border: solid 5px #fff;
+}
+
+/* about */
+.about-section{
+    position: relative;
+    /* height: 100vh; */
+    overflow: hidden;
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+#video-bg {
+    width: 100%;
+    object-fit: cover;
+    /* z-index: 0 */
+}
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 102, 31,.9), rgba(255, 102, 31,.9)); /* Adjust the gradient colors and opacity as needed */
+   
+}
+.about-section .row {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    padding: 0 12rem;
+}
+
+
+.image-side img.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-side {
+    margin-right: 10px; /* Adjust spacing between image and text */
+    flex-grow: 1;
+    width: 40%;
+}
+.text-side{
+    text-align: left;
+    flex-grow: 1;
+    width: 60%;
+}
+
+.about-section h1 {
+    font-size: 2.2rem; /* Adjust as needed */
+    color: #fff;
+}
+
+.about-section p {
+    font-size: 1.1rem; /* Adjust as needed */
+    line-height: 1.5; /* Adjust line height */
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.about-section .btn {
+    font-size: 1.2rem;
+    border: solid 2px #fff;
+    padding: 8px 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.wallet-address{
+    margin-top: 5rem;
+    border: solid 3px #fff;
+    padding: 2rem 10rem;
+}
+.wallet-address h1{
+    color: #fff;
+    font-size: 4rem;
+}
+.wallet-address p{
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.wallet-address .eth-address{
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+/* tokenomics */
+.tokenomics h1{
+    margin-bottom: 2rem;
+}
+.tokenomics p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.tokenomics p span{
+    color: #d20000;
+}
+.tokenomics .total-supply{
+    background-color: #fff;
+    width: 18rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+    border-radius: 5px;
+    color: rgba(255, 102, 31,1);
+    font-weight: bold;
+}
+.tokenomics .note{
+    margin-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+/* how to buy */
+.how-to-buy-section{
+    padding-top: 0;
+}
+.how-to-buy-section img{
+    height: 6rem;
+}
+.how-to-buy-section h1{
+    margin-bottom: 2rem;
+}
+.accordion{
+    text-align: left;
+}
+
+.active .accordion-content {
+    display: block;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 700px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-header {
+    background-color: #f4f4f4;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease-out; /* Add transition for smooth fade-in/out */
+    opacity: 0; /* Initially hide content */
+}
+
+.active .accordion-content {
+    display: block;
+    opacity: 1;
+}
+/* what-is-modi */
+.what-is-modi h1{
+    margin-bottom: 2rem;
+}
+.what-is-modi p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    white-space: 1px;
+    padding: 0 8rem;
+    color: #fff;
+}
+
+/* roadmap */
+.roadmap{
+    padding-top: 0;
+}
+.roadmap h1{
+    margin-bottom: 2rem;
+}
+.process {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .process__item {
+    background: #f2f2f2;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-align: center;
+    position: relative;
+    padding: 15px 35px;
+    transition: 0.4s ease-in-out;
+  }
+  .process__item:hover {
+    background: #f2f2f2;
+  }
+  .process__item:hover .process__number {
+    transform: translateY(5px);
+    color: rgba(255, 102, 31,1);
+  }
+  .process__number {
+    font-size: 90px;
+    -webkit-text-stroke: 1px rgba(255, 102, 31,1);
+    display: block;
+    color: transparent;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+  }
+  .process__title {
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 35px;
+    color: rgba(255, 102, 31,1);
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  .process__subtitle {
+    display: block;
+    font-size: 1.2rem;
+    color: #000;
+    margin-top: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  @media (min-width: 768px) {
+    .process {
+      display: inline-block;
+    }
+    .process__item {
+      width: 49%;
+      display: inline-block;
+    }
+  }
+  @media (min-width: 1200px) {
+    .process {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .process__item {
+      width: 100%;
+    }
+    .process__item:not(:last-of-type)::after {
+      content: "";
+      width: 1px;
+      height: 75%;
+      background: #8c8c8c;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      opacity: 0.2;
+      transform: translateY(-50%);
+    }
+  }

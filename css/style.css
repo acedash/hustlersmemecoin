@@ -191,8 +191,17 @@ header nav ul li {
     .text-side {
         text-align: left; /* Align text to left on larger screens */
     }
+    .wallet-address {
+        padding: 2rem 5rem; /* Adjust padding */
+       
+    }
 }
-
+@media (max-width: 520px) {
+    .wallet-address {
+        padding: 1rem 2rem; /* Adjust padding */
+       
+    }
+}
 /* tokenomics */
 .tokenomics h1 {
     margin-bottom: 2rem;

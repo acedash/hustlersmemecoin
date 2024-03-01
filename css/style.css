@@ -8,7 +8,7 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
     color: #000;
-    background-color: rgba(255, 102, 31,1);
+    background-color: #000;
 }
 /* preset */
 li{
@@ -19,7 +19,11 @@ a{
     color: #fff;
 }
 .icon{
-    width: 4rem;
+    width: 6rem;
+}
+.dextool-icon{
+    height: 6.5rem;
+    width: 6.5rem;
 }
 .row{
     width: 100%;
@@ -35,7 +39,7 @@ h1{
 }
 /* header */
 header nav {
-    background: rgba(255, 102, 31,1);
+    /* background: rgba(255, 102, 31,1); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +53,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .logo-container {
@@ -77,6 +81,9 @@ header nav ul li {
 
     .logo {
         width: 10rem; /* adjust logo size */
+    }
+    .social-icons li{
+        display: none;
     }
 }
 
@@ -106,7 +113,7 @@ header nav ul li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(255, 102, 31,.9), rgba(255, 102, 31,.9)); /* Adjust the gradient colors and opacity as needed */
+    background: linear-gradient(rgba(0, 0, 0,.9), rgba(0, 0, 0,.9)); /* Adjust the gradient colors and opacity as needed */
 }
 
 .about-section .row {
@@ -140,12 +147,12 @@ header nav ul li {
     line-height: 1.5; /* Adjust line height */
     font-weight: bold;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .about-section .btn {
     font-size: 1rem; /* Adjust button font size */
-    padding: 8px 1rem;
+    padding: 1rem 1rem;
     border-radius: 5px;
     font-weight: bold;
     border: solid 2px #fff;
@@ -172,9 +179,13 @@ header nav ul li {
 
 .wallet-address .eth-address {
     font-size: 1/1rem; /* Adjust font size */
-    font-weight: 400;
+    font-weight: 500;
     text-transform: capitalize;
     color: #fff;
+}
+.eth-address span{
+    display: block;
+    font-weight: 500;
 }
 
 /* Responsive styles */

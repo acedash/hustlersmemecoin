@@ -7,25 +7,45 @@
     <title>Hustlers - Meme Coin</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+    .eth-address {
+        cursor: pointer;
+        color: #007bff;
+    }
 
+    .eth-address:hover::after {
+        content: "Click to copy";
+        display: inline-block;
+        margin-left: 5px;
+        color: #666;
+    }
+
+    .copied::after {
+        content: "Copied";
+        display: inline-block;
+        margin-left: 5px;
+        color: #28a745;
+    }
+</style>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#"><img class="icon" src="assets/icons/reddit.svg" alt="reddit" srcset></a></li>
-                <li><a href="#"><img class="icon" src="assets/icons/discord.svg" alt="discord" srcset></a></li>
-                <li><a href="#"><img class="icon telegram" src="assets/icons/telegram.webp" alt="telegram" srcset></a>
+            <ul class="social-icons">
+                <!-- <li><a href="#"><img class="icon" src="assets/icons/reddit.svg" alt="reddit" srcset></a></li>
+                <li><a href="#"><img class="icon" src="assets/icons/discord.svg" alt="discord" srcset></a></li> -->
+                <li><a href="comming-soon.html"><img class="icon dextool-icon" src="assets/icons/dextools.webp"  alt="telegram" srcset></a></li>
+                <li><a href="https://t.me/hustlermemecoin"><img class="icon telegram" src="assets/icons/telegram.webp" alt="telegram" srcset></a>
                 </li>
-                <li><a href="#"><img class="icon" src="assets/icons/twitter.svg" alt="twitter" srcset></a></li>
+                <li><a href="https://x.com/Hustlermemecoin?t=FnLnLNry3ZH_VKiEyLREVA&s=09"><img class="icon" src="assets/icons/twitter.svg" alt="twitter" srcset></a></li>
+               
             </ul>
             <ul class="logo-container">
                 <img class="logo" src="assets/images/logo.png" alt="logo" srcset>
             </ul>
             <ul>
-                <li><a href="#"><img class="icon" src="assets/icons/download.svg" alt="telegram" srcset></a></li>
-                <li><a href="#"><img class="icon" src="assets/icons/coingecko.webp" alt="telegram" srcset></a></li>
-                <li><a href="#"><img class="icon" src="assets/icons/etherscan.webp" alt="telegram" srcset></a></li>
-                <li><a href="#"><img class="icon" src="assets/icons/dextools.webp" alt="telegram" srcset></a></li>
+                <li><a href="comming-soon.html"><img class="icon" src="assets/icons/download.svg" alt="telegram" srcset></a></li>
+                <li><a href="comming-soon.html"><img class="icon" src="assets/icons/coingecko.webp" alt="telegram" srcset></a></li>
+                <li><a href="comming-soon.html"><img class="icon" src="assets/icons/etherscan.webp" alt="telegram" srcset></a></li>
             </ul>
         </nav>
     </header>
@@ -36,8 +56,8 @@
             </div>
             <div class="text-side">
                 <h1>Indian $MODI Movement on the Blockchain</h1>
-                <p>Launched on Febuary 26 2024.The only active cryptocurrency in india where meme make money </p>
-                <a href="#" class="btn">Buy on Uniswap</a>
+                <p>Launched on March 03 2024.The only active cryptocurrency in india where meme make money </p>
+                <a href="#" class="btn">Buy on PancakeSwap</a>
             </div>
         </div>
         <div class="row">
@@ -45,8 +65,12 @@
                 <div class="heading">
                     <h1>HUSTLERS COIN</h1>
                 </div>
-                <p>Turning memes to dreams, <br> one laugh at a time</p>
-                <p class="eth-address">ETH hchsdbfhldjfwcnjs</p>
+                <p>Turning memes into dreams, <br> one laugh at a time</p>
+                <p class="eth-address" onclick="copyAddress()"><span>BNB</span> 
+                <span id="address">
+                    0xaf827abeae4c93ae8770d3f6ca88c7087e3a9cf3
+                </span>
+            </p>
             </div>
         </div>
         <div class="video-container">

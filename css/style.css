@@ -22,7 +22,7 @@ a{
     width: 6rem;
 }
 .dextool-icon{
-    height: 6.5rem;
+    height: 6rem;
     width: 6.5rem;
 }
 .row{
@@ -81,9 +81,6 @@ header nav ul li {
 
     .logo {
         width: 10rem; /* adjust logo size */
-    }
-    .social-icons li{
-        /* display: none; */
     }
 }
 
@@ -176,7 +173,7 @@ header nav ul li {
 
 .wallet-address p {
     font-size: 1.2rem; /* Adjust paragraph font size */
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 1rem; /* Add some spacing between paragraphs */
 }
@@ -209,6 +206,15 @@ header nav ul li {
 
     .wallet-address .eth-address {
         font-size: 0.8rem; /* Decrease font size on smaller screens */
+    }
+}
+@media screen and (max-width:500px) {
+    .wallet-address {
+        padding: 1rem;
+        max-width: 20rem;
+    }
+    .wallet-address .eth-address {
+        font-size: 0.6rem; /* Decrease font size on smaller screens */
     }
 }
 

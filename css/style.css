@@ -8,7 +8,7 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
     color: #000;
-    background-color: #000;
+    background-color: #1d1b26;
 }
 /* preset */
 li{
@@ -113,7 +113,7 @@ header nav ul li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0,.9), rgba(0, 0, 0,.9)); /* Adjust the gradient colors and opacity as needed */
+    background: linear-gradient(rgba(29, 27, 38,.9), rgba(29, 27, 38,.9)); /* Adjust the gradient colors and opacity as needed */
 }
 
 .about-section .row {
@@ -148,6 +148,7 @@ header nav ul li {
     font-weight: bold;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    color: #dd4e2e;
 }
 
 .about-section .btn {
@@ -160,10 +161,13 @@ header nav ul li {
 
 .wallet-address {
     margin-top: 2rem; /* Reduce top margin on smaller screens */
-    padding: 3rem 7rem; /* Adjust padding */
+    max-width: 60rem;
+    max-height: 30rem;
+    padding: 2rem 4rem;
     text-align: center; /* Center text */
     margin: 0 auto;
     border: solid 2px #fff;
+    overflow: hidden;
 }
 
 .wallet-address h1 {
@@ -203,14 +207,14 @@ header nav ul li {
         text-align: left; /* Align text to left on larger screens */
     }
     .wallet-address {
-        padding: 2rem 5rem; /* Adjust padding */
+        padding: 2rem 3rem; /* Adjust padding */
        
     }
 }
 @media (max-width: 520px) {
     .wallet-address {
         padding: 1rem 2rem; /* Adjust padding */
-       
+       width: 30rem;
     }
 }
 /* tokenomics */
@@ -292,7 +296,12 @@ header nav ul li {
     font-weight: bold;
     font-size: 1rem;
 }
-
+.accordion-header .btn{
+    color: #000;
+    border: solid 2px #000;
+    padding: 5px;
+    border-radius: 3px;
+}
 .accordion-content {
     display: none;
     padding: 15px;
@@ -314,7 +323,10 @@ header nav ul li {
         font-size: 1.5rem; /* Decrease font size for smaller screens */
     }
 }
-
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+}
 /* what-is-modi */
 .what-is-modi h1 {
     margin-bottom: 2rem;

@@ -162,7 +162,6 @@ header nav ul li {
 .wallet-address {
     margin-top: 2rem; /* Reduce top margin on smaller screens */
     max-width: 60rem;
-    max-height: 30rem;
     padding: 2rem 4rem;
     text-align: center; /* Center text */
     margin: 0 auto;
@@ -179,44 +178,40 @@ header nav ul li {
     font-size: 1.2rem; /* Adjust paragraph font size */
     font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 1rem; /* Add some spacing between paragraphs */
 }
 
 .wallet-address .eth-address {
-    font-size: 1/1rem; /* Adjust font size */
+    font-size: 1rem; /* Adjust font size */
     font-weight: 500;
     text-transform: capitalize;
     color: #fff;
 }
-.eth-address span{
+
+.eth-address span {
     display: block;
     font-weight: 500;
 }
 
-/* Responsive styles */
-@media (min-width: 768px) {
-    .about-section .row {
-        flex-direction: row; /* Revert back to horizontal layout for larger screens */
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .wallet-address {
+        padding: 1rem; /* Reduce padding on smaller screens */
     }
 
-    .image-side, .text-side {
-        width: 50%; /* Make both sides take 50% width on larger screens */
-        margin-bottom: 0; /* Remove margin between sections */
+    .wallet-address h1 {
+        font-size: 2rem; /* Decrease heading font size on smaller screens */
     }
 
-    .text-side {
-        text-align: left; /* Align text to left on larger screens */
+    .wallet-address p {
+        font-size: 1rem; /* Decrease paragraph font size on smaller screens */
     }
-    .wallet-address {
-        padding: 2rem 3rem; /* Adjust padding */
-       
-    }
-}
-@media (max-width: 520px) {
-    .wallet-address {
-        padding: 1rem 2rem; /* Adjust padding */
-       width: 30rem;
+
+    .wallet-address .eth-address {
+        font-size: 0.8rem; /* Decrease font size on smaller screens */
     }
 }
+
 /* tokenomics */
 .tokenomics h1 {
     margin-bottom: 2rem;
